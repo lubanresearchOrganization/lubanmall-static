@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import elementUI from 'element-ui'
 // 引入http请求插件
 import http from '@config/utils/http'
 // 引入log日志插件
@@ -10,6 +11,7 @@ import { addRequestInterceptor, addResponseInterceptor } from '@config/utils/htt
 Vue.use(http)
 Vue.use(vueLogger)
 Vue.use(VueRouter)
+Vue.use(elementUI)
 
 // request前自动添加api配置
 addRequestInterceptor(
