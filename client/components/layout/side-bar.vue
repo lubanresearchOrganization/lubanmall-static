@@ -1,5 +1,7 @@
 <template>
-  <div class="vl-side-bar"></div>
+  <div class="vl-side-bar">
+    22
+  </div>
 </template>
 <script type="text/babel">
   export default {

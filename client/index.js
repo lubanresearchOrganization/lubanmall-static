@@ -5,6 +5,8 @@ import '@config/utils/responsiveDesign'
 import Vue from 'vue'
 // reset样式
 import '@/assets/css/common.css'
+// 引入css字体样式
+import '@/assets/font/iconfont.css'
 // vue config配置文件
 import './config'
 // 自己实现的方法

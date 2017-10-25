@@ -14,7 +14,10 @@ Vue.use(http)
 Vue.use(vueLogger)
 Vue.use(VueRouter)
 Vue.use(elementUI)
-components.map(component => Vue.component('zd-' + component.name, component))
+
+Object.values(components).forEach(comp => {
+  Vue.component('zd-' + comp.name, comp)
+})
 
 // request前自动添加api配置
 addRequestInterceptor(

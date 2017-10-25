@@ -1,10 +1,11 @@
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, div {
   margin: 0;
   padding: 0;
 }
 
 body, button, input, select, textarea {
-  font: 12PX/1.5 tahoma, arial, 'microsoft yahei', sans-serif
+  font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei';
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +33,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 sup {
@@ -58,4 +59,9 @@ button, input, select, textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
 }

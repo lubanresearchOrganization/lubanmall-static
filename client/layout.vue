@@ -1,15 +1,14 @@
 <template>
   <div class="view-layout">
     <div class="view-layout-topbar">
-
+      <zd-top-bar></zd-top-bar>
     </div>
     <div class="view-layout-sidebar">
-
+      <zd-side-bar></zd-side-bar>
     </div>
     <div class="view-layout-warp">
-      <div class="vl-warp-nav">
-
-      </div>
+      <!--vl-warp-nav暂且用不到隐藏-->
+      <!--<div class="vl-warp-nav"></div>-->
       <div class="vl-warp-body">
         <router-view></router-view>
       </div>
@@ -51,6 +50,8 @@
       left 0;
       z-index: 1;
       background-color: #293038;
+      box-sizing: border-box;
+      padding-top: 50px;
     }
   }
 
