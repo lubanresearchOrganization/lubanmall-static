@@ -1,11 +1,12 @@
 <template>
   <div class="vl-side-bar">
     <div class="sidebar-nav">
-      <div class="sidebar-title sidebar-title-inner sidebar-open">
+      <div class="sidebar-title sidebar-title-inner">
         <div class="inline-block">
           <zd-icon icon="triangle-right"></zd-icon>
         </div>
         <span class="sidebar-title-text">商户管理</span>
+        <zd-icon icon="shezhi"></zd-icon>
       </div>
       <ul class="sidebar-nav-ul">
         <li class="nav-item">
@@ -45,7 +46,7 @@
       background-color: #42485B;
       color: #fff;
       line-height: 40px;
-      padding: 0 20px;
+      padding: 0 18px;
       cursor: pointer;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -91,8 +92,16 @@
       width: 130px;
       padding-left: 5px;
     }
+    .sidebar-title-text + i {
+      float: right;
+      font-size: 16px;
+      display: none;
+    }
     .sidebar-title-inner:hover {
       background-color: #1ac1de;
+      .sidebar-title-text + i {
+        display: inline-block;
+      }
     }
   }
 </style>
