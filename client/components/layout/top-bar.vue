@@ -1,7 +1,7 @@
 <template>
   <div class="vl-top-bar">
     <a class="top-bar-btn top-bar-index" href="javascript:;">
-      <i class="iconfont icon-shouye"></i>
+      <zd-icon icon="shouye"></zd-icon>
     </a>
     <a class="top-bar-btn index-word" href="javascript:;">管理后台</a>
     <div class="top-bar-right">

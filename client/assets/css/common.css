@@ -20,7 +20,7 @@ code, kbd, pre, samp {
   font-family: couriernew, courier, monospace;
 }
 
-small {
+body, small {
   font-size: 12PX;
 }
 
@@ -64,4 +64,8 @@ table {
 .inline-block {
   display: inline-block;
   vertical-align: middle;
+}
+
+div {
+  box-sizing: border-box;
 }
