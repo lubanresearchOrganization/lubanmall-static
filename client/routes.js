@@ -1,10 +1,17 @@
-import main from './view/index.vue'
+import layout from './layout.vue'
+import empty from './empty.vue'
 
 const routes = [
   {
     path: '/',
-    component: main,
-    meta: { title: '首页' }
+    component: layout,
+    children: [
+      {
+        path: '/test',
+        component: empty,
+        // children: ,
+      },
+    ],
   },
 ]
 

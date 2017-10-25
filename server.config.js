@@ -7,6 +7,5 @@ module.exports = {
   appPort: 9009,
   proxy: {
     '/api/test': constants.loginTargets[common],
-    '/v3/assistant': 'http://restapi.amap.com/v3/',
   },
 }

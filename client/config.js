@@ -6,17 +6,20 @@ import http from '@config/utils/http'
 // 引入log日志插件
 import vueLogger from '@config/utils/logger/vue-logger'
 import { addRequestInterceptor, addResponseInterceptor } from '@config/utils/http/http'
+// 引入自定义业务组件
+import components from './components'
 
 // 注册插件
 Vue.use(http)
 Vue.use(vueLogger)
 Vue.use(VueRouter)
 Vue.use(elementUI)
+components.map(component => Vue.component('zd-' + component.name, component))
 
 // request前自动添加api配置
 addRequestInterceptor(
   (config) => {
-    // config.url = `/api${config.url}`
+    config.url = `/api${config.url}`
     return config
   },
   (error) => {
