@@ -9,7 +9,7 @@ import '@/assets/css/common.css'
 import '@/assets/font/iconfont.css'
 // vue config配置文件
 import './config'
-// 自己实现的方法
+// 引入router
 import router from './router'
 import App from './app.vue'
 
