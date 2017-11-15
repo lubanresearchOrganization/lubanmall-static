@@ -38,7 +38,7 @@ config.plugins = (config.plugins || []).concat([
   // }),
   // 全局开启代码热替换
   new webpack.HotModuleReplacementPlugin(),
-  // new webpack.NoEmitOnErrorsPlugin(),
+  new webpack.NoEmitOnErrorsPlugin(),
   new FriendlyErrorsPlugin(),
 ])
 

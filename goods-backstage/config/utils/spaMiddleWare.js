@@ -16,7 +16,7 @@ const defaultOptions = { include: /^\/(api|static|public|v3)/ }
  * @param {String} filename 文件名
  * @return {String} 文件内容
  */
-function readBuiltFile(filename) {
+function readBuiltFile (filename) {
   return fs.readFileSync(path.join(process.cwd(), 'public', filename), 'utf-8')
 }
 
@@ -34,7 +34,7 @@ if (!IS_DEBUG) {
  */
 module.exports = function (options) {
   options = Object.assign({}, defaultOptions, options)
-  return async function spa(ctx, next) {
+  return async function spa (ctx, next) {
     if (!options.include.test(ctx.url)) {
       /**
        * 开发模式从koa2服务中获取index
@@ -59,7 +59,7 @@ module.exports = function (options) {
       /**
        * 返回HTML
        */
-      function doRender() {
+      function doRender () {
         const res = ctx.res
         res.statusCode = 200
         // 这句很重要，否则会影响到weinre调试
